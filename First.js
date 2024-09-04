@@ -119,6 +119,55 @@ else if (marks >= 0 && marks <= 49) {
 
 console.log("According to score grade will be=", grade);
 
+for (a = 1; a <= 4; a++) {
+    console.log("Deeksha", a)
+}
+//while loop
+i = 1
+while (i <= 4) {
+    console.log("i=", i)
+    i++;
+}
+//for-of loop
+let p = "deeksha";
+for (let o of p) {
+    console.log("o=", o);
+}
+//for-in loop
+let no = {
+    "Deeksha": 1,
+    Age: 22,
+    class: "BCOM"
+};
+for (let key in no) {
+    console.log("key", key, "value=", no[key]);
+}
+//practice question-find all the even values from 0-100
+for (v = 0; v <= 100; v++) {//even number
+
+    if (v % 2 === 0) {
+        console.log(v)
+    }
+}
+// Q2. create a game where you start with any random number. Ask the user to keep guessing until it reach the exact number.
+let game = 50
+let pro = prompt("Guess any number: ");
+while (pro != game) {
+    pro = prompt("Opps the number is incorrect", "Please try again");
+}
+console.log("Congrats! your choice is correct");
+let obj = {
+    item: "pen",
+    price: 10,
+};
+console.log("The cost of ", obj.item, "is=", obj.price, "Rupee");
+//arrays-we use array to put information in linear way and any data type form
+let arr = [40, 50, 60, 70]
+//in arrays we can change the value or mutable but strings are not mutable 
+
+
+
+
 
 
 
