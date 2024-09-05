@@ -164,6 +164,40 @@ console.log("The cost of ", obj.item, "is=", obj.price, "Rupee");
 //arrays-we use array to put information in linear way and any data type form
 let arr = [40, 50, 60, 70]
 //in arrays we can change the value or mutable but strings are not mutable 
+for (i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+}
+
+let arry_1 = ["delhi", "bangalore", "mathura"];
+for (let arr_2 of arry_1) {
+    console.log(arr_2);
+}
+//Q3 for a given array with the price of five items-->[250,645,300,900,50].All these items have 10%off now we have to store that values after allowing discounts
+let items = [250, 645, 300, 900, 50];
+let idex = 0;
+for (let val of items) {
+    let offer = val / 10
+    val = val - offer
+    console.log(`value of index at ${idex}=${val}`);
+    idex++;
+}
+//push and pop use to update and delete the values inside array
+let fruits = ["apple", "mango", "banana", "orange"]
+fruits.pop()
+console.log(fruits)
+fruits = fruits.push("Litchi")
+console.log(fruits);
+//concat for multipple values
+let country = ["Russia", "Germany", "Newzland", "India"];
+let food = ["Idli", "Dosa", "Fries", "Pizza"];
+let beverages = ["Colddrink", "Juice", "Coffee", "Tea"];
+let together = country.concat(food, beverages);
+console.log(together);
+//splice is used to add , delete, replace the arry
+let arr_1 = [1, 2, 3, 4, 5, 6, 7, 8];
+let arr_2 = arr_1.splice(2, 2, 101, 102);
+console.log(arr_2);
+
 
 
 
